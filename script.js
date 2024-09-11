@@ -31,7 +31,19 @@ function setColor() {
     document.body.style.backgroundColor = color;
 }
 
+function setColorPicker() {
+    const color = document.getElementById('colorPicker').value;
+    document.body.style.backgroundColor = color;
+}
+
 function randomColor() {
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
     document.body.style.backgroundColor = randomColor;
+}
+
+function setRGBColor() {
+    const r = document.getElementById('redSlider').value;
+    const g = document.getElementById('greenSlider').value;
+    const b = document.getElementById('blueSlider').value;
+    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
